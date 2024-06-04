@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+   height: 100vh;
+   width: auto;
+}
+
+header {
+    background-color: black;
+    padding-bottom: 7px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+header > h1 {
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header span {
+    color: white;
+    cursor: pointer;
+}
+
+header nav {
+    display: block;
+}
+
+header a {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    margin: 4px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+}
+
+header a:hover {
+    background-color: red;
+}
+
+section {
+    width: auto;
+    padding: 0px 60px;
+}
+
+section > div.titulo {
+    text-align: center;
+    padding: 50px;
+}
+
+section > div.conteudo {
+
+    background-color: lightgrey;
+    margin: 15px 0px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+div.conteudo > a {
+    padding: 5px;
+    display: block;
+    background-image: linear-gradient(to right, black, rgb(182, 17, 17));
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+div.conteudo > p {
+    padding: 10px;
+    text-align: justify;
+}
+
+div.conteudo > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+footer > div#titulo > p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer > div.bloco {
+    display: inline-block;
+    width: 200px; 
+    font-weight: bold;
+}
+
+div.bloco > p > a {
+    color: white;
+    font-weight: normal;
+}
+
+div.bloco > p > a:hover {
+    color: red;
+}
+
+

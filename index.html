@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InforSumo</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <h1>InforSumo</h1>
+        <span onclick="clickMenu()">&</span>
+        <nav>
+            <a href="#">Categorias</a>
+            <a href="#">Opção 1</a>
+            <a href="#">Reportar Erro</a>
+        </nav> 
+    </header>
+
+    <main>
+        <section>
+            <div class="titulo">
+                <h1>Conteúdos</h1>
+            </div>
+
+            <div class="conteudo" class="hardware">
+                <a href="#">Processador</a>
+                <p>O que é, como surgiu e algumas caracteristicas dos processadores.</p>
+            </div>
+
+            <div class="conteudo" class="hardware">
+                <a href="#">Memórias</a>
+                <p>Tipos e caracteristicas das memórias de dispositivos eletrônicos.</p>
+            </div>
+
+            <div class="conteudo" class="hardware">
+                <a href="#">Barramentos</a>
+                <p>Tipos e função dos barramentos.</p>
+            </div>
+
+            <div class="conteudo" class="seguranca">
+                <a href="#">Malware</a>
+                <p>Códigos maliciosos, principais perigos na internet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="titulo">
+            <p>InforSumo</p>
+        </div>
+        <div class="bloco">
+            <p>
+                Navegação: <br>
+                <a href="#">Categorias</a> <br>
+                <a href="#">Conteúdos</a> <br>
+                <a href="#">formulários</a> <br>
+            </p>
+        </div>
+
+        <div class="bloco">
+            <p>Autoria: <a href="#">Carlos Henrique</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                iten.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
