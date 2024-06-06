@@ -15,10 +15,11 @@ header {
     background-color: black;
     padding-bottom: 7px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
 header > h1 {
-    color: white;
+    color: red;
     padding: 40px;
     text-align: center;
 }
@@ -46,44 +47,65 @@ header a:hover {
     background-color: red;
 }
 
-section {
-    width: auto;
-    padding: 0px 60px;
+header a:active {
+    font-size: 0.9em;
+    box-shadow: inset 0px 0px 5px black;
+    transition: 0.1s;
 }
 
-section > div.titulo {
-    text-align: center;
-    padding: 50px;
-}
-
-section > div.conteudo {
-
-    background-color: lightgrey;
-    margin: 15px 0px;
+main {
     height: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: auto;
+    padding: 30px;
 }
 
-div.conteudo > a {
-    padding: 5px;
-    display: block;
-    background-image: linear-gradient(to right, black, rgb(182, 17, 17));
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+article::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: #333; /* Cor da linha */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */;
 }
 
-div.conteudo > p {
-    padding: 10px;
+article > h2 {
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 1.8em;
+    font-variant: small-caps;
+}
+
+article > h3 {
+    font-size: 1.5em;
+    margin: 30px 0px;
+}
+
+article > h4 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+article > p {
     text-align: justify;
+    font-size: 1.4em;
+    line-height: 1.7em;
+    margin: 20px 0px;
 }
 
-div.conteudo > a:hover {
-    text-decoration: underline;
-    color: red;
+article img {
+    display: block;
+    width: 100%;
+}
+
+article audio {
+    display: block;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+article > ul {
+    list-style-position: inside;
+    font-size: 1.2em;
 }
 
 footer {
@@ -94,6 +116,7 @@ footer {
 }
 
 footer > div#titulo > p {
+    color: red;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
