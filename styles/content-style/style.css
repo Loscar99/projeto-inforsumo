@@ -137,26 +137,36 @@ footer {
     color: white;
     margin-top: 80px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-footer > div#titulo > p > a {
+footer < div#titulo {
+    flex: auto;
+}
+
+footer > div#titulo > p > a{
     color: red;
     font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
 }
 
-footer > div#titulo > p > a:hover {
-    text-decoration: underline;
-}
-
 footer > div#titulo > p {
     text-align: center;
 }
 
-footer > div.bloco {
-    display: inline-block;
-    width: 200px; 
+footer > section {
+    margin: 20px 0px;
+    padding: 10px;
+    width: auto;
+    display: flex;
+}
+
+footer > section > div.bloco {
+    flex: auto;
+    width: auto; 
+    height: 100%;
     font-weight: bold;
 }
 
@@ -168,5 +178,4 @@ div.bloco > p > a {
 div.bloco > p > a:hover {
     color: red;
 }
-
 
