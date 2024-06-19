@@ -41,6 +41,7 @@ header a {
     padding: 5px;
     display: block;
     box-sizing: border-box;
+    transition: 0.5s ease;
 }
 
 header a:hover {
@@ -48,9 +49,8 @@ header a:hover {
 }
 
 header a:active {
-    font-size: 0.9em;
-    box-shadow: inset 0px 0px 5px black;
-    transition: 0.1s;
+    transform: scale(0.9);
+    border-radius: 10px;
 }
 
 section {

@@ -41,6 +41,7 @@ header a {
     padding: 5px;
     display: block;
     box-sizing: border-box;
+    transition: 0.5s ease;
 }
 
 header a:hover {
@@ -48,9 +49,8 @@ header a:hover {
 }
 
 header a:active {
-    font-size: 0.9em;
-    box-shadow: inset 0px 0px 5px black;
-    transition: 0.1s;
+    transform: scale(0.9);
+    border-radius: 10px;
 }
 
 main {
@@ -80,10 +80,6 @@ div#tipos {
 
 div#tipos > p {
     font-weight: bold;
-}
-
-div#tipos > input[type=checkbox]:hover {
-    color: red;
 }
 
 div#tipos > input[type=text] {
@@ -127,16 +123,71 @@ div#anexo {
     margin: 15px 0px; 
 }
 
+div#anexo > input[type=file] {
+    font-size: 1em;
+    padding: 15px 0px;
+    cursor: pointer;
+}
+
 div#butao {
-    display: inline-block;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.308);
+    display: flex;
     padding: 10px;
     border-radius: 5px;
     margin: 15px 0px; 
 }
 
+div#butao > input[type=submit] {
+    display: inline-block;
+    background-color: white;
+    height: 50px;
+    width: 140px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+div#butao > input[type=reset] {
+    display: inline-block;
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+div#butao > input[type=reset]:hover {
+    background-color: red;
+    color: white;
+}
+
 div#butao > input[type=submit]:hover {
     background-color: red;
+    color: white;
+
+}
+
+div#butao > input[type=submit]:active {
+    transform: scale(0.9);
+}
+
+div#butao > input[type=reset]:active {
+    transform: scale(0.9); /*diminui o tamanho para 90%*/
 }
 
 footer {
