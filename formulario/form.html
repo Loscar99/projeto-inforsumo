@@ -10,46 +10,44 @@
     <header>
         <h1>FORMULÁRIO</h1>
         <nav>
-            <a href="../index.html" target="_self" rel="prev" title="Tela inicial">Home</a> 
-            <a href="#">Contatos</a> 
+            <a href="../index.html" target="_self" rel="prev" title="Tela inicial">Home</a>
+            <a href="#">Contatos</a>
             <a href="#">Suporte</a>
-        </nav> 
+        </nav>
     </header>
-
-    <section class="form">
-        <div>
-            <h1>Reportar Erro</h1>
-            <p>Reporte o erro ou problema que você encontrou:</p>
-        </div>
-      <form action="" method="post">
-        <fieldset>
-            <legend>Tipo de erro/problema:</legend>
-            <input type="checkbox" name="esc" id="iesc">
-            <label for="iesc">Escrita</label> <br>
-            <input type="checkbox" name="link" id="ilink">
-            <label for="ilink">Link</label> <br>
-            <input type="checkbox" name="cont" id="icont">
-            <label for="icont">Conteúdo</label> <br>
-            <label for="itexto">Outros:</label>
-            <input type="text" name="texto" id="itexto">
-        </fieldset>
-
-        <div>
-            <label for="idesc">Descrição:</label> <br>
-            <textarea name="desc" id="idesc" cols="50" rows="5" placeholder="Descreva o tipo do problema ou erro e onde se encontra"></textarea> 
-        </div>
-
-        <div>
-            <label for="iimg">Se possível, anexe um imagem do erro/problema:</label> <br>
-            <input type="file" name="img" id="iimg">
-        </div>
-
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </div>
-      </form>  
-    </section>
+    <main>
+        <section class="form">
+            <div>
+                <h1>Reportar Erro</h1>
+                <p>Reporte o erro ou problema que você encontrou:</p>
+            </div>
+          <form action="" method="post">
+                <div id="tipos">
+                    <p>Tipo de erro/problema:</p>
+                    <input type="checkbox" name="esc" id="iesc">
+                    <label for="iesc">Escrita</label> <br>
+                    <input type="checkbox" name="link" id="ilink">
+                    <label for="ilink">Link</label> <br>
+                    <input type="checkbox" name="cont" id="icont">
+                    <label for="icont">Conteúdo</label> <br>
+                    <label for="itexto">Outros:</label>
+                    <input type="text" name="texto" id="itexto">
+                </div>
+            <div id="descricao">
+                <label for="idesc">Descrição:</label> <br>
+                <textarea name="desc" id="idesc"  rows="5" placeholder="Descreva o tipo do problema ou erro e onde se encontra"></textarea>
+            </div>
+            <div id="anexo">
+                <label for="iimg">Se possível, anexe um imagem do erro/problema:</label> <br>
+                <input type="file" name="img" id="iimg">
+            </div>
+            <div id="butao">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+          </form>
+        </section>
+    </main>
 
     <footer>
         <div id="titulo">
