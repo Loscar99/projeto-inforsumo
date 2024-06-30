@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+   height: 100vh;
+   width: auto;
+}
+
+header {
+    background-color: black;
+    padding-bottom: 7px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+header > h1 {
+    color: red;
+    padding: 40px;
+    text-align: center;
+}
+
+header span {
+    color: white;
+    cursor: pointer;
+}
+
+header nav {
+    display: block;
+}
+
+header a {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    margin: 4px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    transition: 0.5s ease;
+}
+
+header a:hover {
+    background-color: red;
+}
+
+header a:active {
+    transform: scale(0.9);
+    border-radius: 10px;
+}
+
+main {
+    display: block;
+    max-width: 600px;
+    margin: auto;
+    padding: 50px 10px;
+}
+
+main h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 20px;
+}
+
+main h2#nome {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 20px;
+}
+
+main h2 {
+    font-size: 1.8em;
+}
+
+main p {
+    font-size: 1.3em;
+    margin: 30px;
+}
+
+#contatos {
+    margin-top: 30px;
+}
+
+#contatos p {
+    margin: 0px 10px;
+    font-size: 1.5em;
+}
+
+#contatos a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+#contatos a:hover{
+    color: red;
+}
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+span.icone {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.icone img{
+    height: 40px;
+    width: auto;   
+}
+
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer < div#titulo {
+    flex: auto;
+}
+
+footer > div#titulo > p > a{
+    color: red;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > div#titulo > p {
+    text-align: center;
+}
+
+footer > section {
+    margin: 20px 0px;
+    padding: 10px;
+    width: auto;
+    display: flex;
+}
+
+footer > section > div.bloco {
+    flex: auto;
+    width: auto; 
+    height: 100%;
+    font-weight: bold;
+}
+
+div.bloco > p > a {
+    color: white;
+    font-weight: normal;
+}
+
+div.bloco > p > a:hover {
+    color: red;
+}
+
+
+/* ------ MEDIA QUERIES -------*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    nav a {
+        display: inline-block;
+        width: 200px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    header > span {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    nav a {
+        display: inline-block;
+        width: 200px;
+        margin: 0px 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    header > span {
+        display: none;
+    }
+}
