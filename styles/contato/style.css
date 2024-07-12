@@ -126,12 +126,6 @@ footer {
     color: white;
     margin-top: 80px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-footer < div#titulo {
-    flex: auto;
 }
 
 footer > div#titulo > p > a{
@@ -148,12 +142,16 @@ footer > div#titulo > p {
 footer > section {
     margin: 20px 0px;
     padding: 10px;
+    height: auto;
     width: auto;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 footer > section > div.bloco {
-    flex: auto;
+    padding: 10px;
+    text-align: center;
     width: auto; 
     height: 100%;
     font-weight: bold;
@@ -175,8 +173,8 @@ div.bloco > p > a:hover {
 
     nav a {
         display: inline-block;
-        width: 200px;
-        margin: 0px 10px;
+        width: 150px;
+        margin: 2px 5px;
         border-radius: 10px;
         text-align: center;
     }
